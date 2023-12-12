@@ -1,7 +1,7 @@
 /*
  * sliding window start of unique sequence end of unique seq
  * have a hashset of all the str traversed by end ptr if in hashet
- * move start to end
+ * move start till dup elem removed
  */
 
 import java.util.HashSet;
