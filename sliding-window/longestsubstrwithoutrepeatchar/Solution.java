@@ -12,10 +12,10 @@ class Solution {
         int leftPtr = 0;
         int rightPtr = 0;
         HashSet<Character> occurenceSet = new HashSet<>();
-        while (rightPtr < s.length()) {
+        while (rightPtr < s.length()) { // O(n)
             if (occurenceSet.contains(s.charAt(rightPtr))) {
                 res = rightPtr - leftPtr > res ? rightPtr - leftPtr : res;
-                while (true) {
+                while (true) { // O(n/n) O(1)
                     ++leftPtr;
                     if (s.charAt(leftPtr - 1) == s.charAt(rightPtr)) break; 
                     occurenceSet.remove(s.charAt(leftPtr - 1));
