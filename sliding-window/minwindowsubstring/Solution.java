@@ -1,3 +1,9 @@
+/*
+ * have a map of frequencies of each letter in t string
+ * sliding window with left and right pointer
+ * traverse right accordingly and update the map freq if needed. When t letters are included move the leftPtr till its the min for that curr rightPtr. Repeat till rightPtr is at the end
+ */
+
 import java.util.HashMap;
 
 class Solution {
@@ -36,7 +42,7 @@ class Solution {
 
             ++rightPtr;
         }
-        
+
         return res;
     }
 }
